@@ -1,3 +1,4 @@
+
 # Documentation de l'API [Epitech Intranet]
 
 ## Dashboard
@@ -35,7 +36,7 @@ This request returns an array of project data.
 - **`id_activite:`** Project's activity id
 
 ## `data.board.notes`:
-```json
+```javascript
 [{
 	"title": "#OpenSource Project contribution"
 	"title_link": "/module/2018/B-INN-000/NCE-0-1/acti-307184/"
@@ -48,10 +49,18 @@ This request returns an array of project data.
 	"soutenance_link": false
 	"soutenance_date": false
 	"soutenance_salle": false
-}, ...]
+}, "..."]
 ```
 
 This request returns an array of mark data.
+
+#### Fields:
+
+- **`title:`** Project's title 
+- **`title_link:`** Url link to concat with base intranet url, used to access project informations.
+- **`timeline_*:`** Project's timeline informations (start, end and progress)
+- **`date_inscription:`** Project's maximum inscription date
+- **`id_activite:`** Project's activity id
 
 ## `data.board.activites`:
 ```json
@@ -116,4 +125,3 @@ This request returns an array of history JSON data.
 ## Emploi du temps
 
 ## Fichiers Intranet
-
